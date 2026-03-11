@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOTODANCE Admin | Inscriptions</title>
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/site.css" />
+  </head>
+  <body>
+    <main class="admin-wrap">
+      <div class="container">
+        <div class="admin-head">
+          <div>
+            <p class="eyebrow">ADMINISTRATION</p>
+            <h1>Inscriptions LOTODANCE</h1>
+          </div>
+          <a class="btn btn-ghost" href="index.html">Retour au site</a>
+        </div>
+
+        <section class="admin-panel">
+          <div class="admin-tools">
+            <button id="export-csv" class="btn btn-primary" type="button">Exporter CSV</button>
+            <button id="clear-all" class="btn btn-ghost" type="button">Vider les inscriptions</button>
+            <span id="admin-count" class="admin-meta">0 inscription(s)</span>
+          </div>
+
+          <div id="admin-empty" class="empty" hidden>
+            Aucune inscription enregistrée pour le moment.
+          </div>
+
+          <div class="admin-table-wrap">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Date inscription</th>
+                  <th>Prénom</th>
+                  <th>Nom</th>
+                  <th>Email</th>
+                  <th>Événement</th>
+                </tr>
+              </thead>
+              <tbody id="admin-rows"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="assets/site.js"></script>
+  </body>
+</html>
